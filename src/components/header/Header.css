@@ -1,0 +1,20 @@
+.header-inner .item img{
+    width: 200px; 
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-inner .item ul{
+    list-style: none;
+    display: flex; 
+}
+
+
+.header-inner .item li{
+    margin: 8px;
+    
+}
