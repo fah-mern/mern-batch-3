@@ -1,7 +1,8 @@
 import React from 'react'
 import logo from '../../assets/1.png'
 import './Header.css'
-import navlogo from '../../assets/cart-icon.png'
+import navlogo from '../../assets/cart-icon.png';
+import {Link} from 'react-router-dom'
 
  function Header() {
     return (
@@ -9,14 +10,14 @@ import navlogo from '../../assets/cart-icon.png'
             <div className='header-inner'>
 
                 <div className='item'>
-<img src={logo} alt=''/>
+<Link to="/"><img src={logo} alt=''/></Link>
                 </div>
 
                 <div className='item'>
  <ul>
      
- <li><a href="#">Store Location</a></li>
- <li><a href="#">Register/Login</a></li>
+ <li><Link to="/account/location">Store Location</Link></li>
+ <li><Link to="/account/register">Register/Login</Link></li>
  </ul>
                 </div>
             </div>
