@@ -11,6 +11,7 @@ import {
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Notfound from "./pages/notfound/Notfound";
+import ProductDetail from "./pages/productDetail/productDetail";
 
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
      <Route exact  path="/">
      <hr/>
      <Home product={products}/>
+     </Route>
+
+     <Route exact path="/product/:slug">
+    <ProductDetail/>
      </Route>
 
      <Route path="*">

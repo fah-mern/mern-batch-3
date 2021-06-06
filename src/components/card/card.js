@@ -1,5 +1,6 @@
 import React ,{useState}from 'react'
 import logo from '../../assets/1.jpg'
+import {Link} from 'react-router-dom'
  function Card(props) {
 
   const [products,setProducts]= useState(props.products);
@@ -10,7 +11,7 @@ import logo from '../../assets/1.jpg'
   <div className="card-body">
     <h5 className="card-title">{products.title}</h5>
     <p className="card-text">{products.description}}</p>
-    <a href="#" className="btn btn-primary">Add to Bucket</a>
+    <Link to={`/product/${products.slug}`} className="btn btn-primary">Add to Bucket</Link>
   </div>
 </div>
             
