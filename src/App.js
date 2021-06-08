@@ -12,6 +12,7 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Notfound from "./pages/notfound/Notfound";
 import ProductDetail from "./pages/productDetail/productDetail";
+import Products from "./pages/products/Products";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <div className='container'>
       <Router>
       <Header/>
+      <br/>
         <Switch>
 
      <Route exact path="/account/login">
@@ -37,6 +39,10 @@ function App() {
 
      <Route exact path="/product/:slug">
     <ProductDetail/>
+     </Route>
+
+     <Route exact path="/collection/:category">
+  <Products/>
      </Route>
 
      <Route path="*">
