@@ -11,6 +11,7 @@ function ProductDetail() {
         <div>
             <h1>Product Detail Page</h1>
     
+            <img src={p.image}  alt="..."/>
             <h3>{p.title}</h3>
             <p>{p.description}</p>
             <p>Price: <strong>PKR. {p.price}</strong></p>

@@ -19,7 +19,7 @@ import {Link} from 'react-router-dom'
  <ul>
      
  <li><Link to="/account/location">Store Location</Link></li>
- <li><Link to="/account/register">Register/Login</Link></li>
+ <li><Link to="/account/login">Register/login</Link></li>
  </ul>
                 </div>
             </div>
@@ -39,7 +39,7 @@ import {Link} from 'react-router-dom'
           <Link className="nav-link" to="/collection/make-it-a-meal">MAKE IT A MEAL</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/collection/signature-box">SIGNATURE BOXE</Link>
+          <Link className="nav-link" to="/collection/signature-box">SIGNATURE BOX</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/collection/sharing">SHARING</Link>
